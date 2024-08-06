@@ -1,0 +1,13 @@
+.modal-wrapper.job{
+    line-height:1.5rem;
+}
+.modal-wrapper.job .modal-description{
+    line-height:1.8rem;
+}
+.modal-wrapper.job .modals-header{
+    font-size:1.3rem;
+    line-height:1.5rem;
+}
+.modal-wrapper.job .modals-header{
+    border-bottom:2px solid var(--dark-gold);
+}

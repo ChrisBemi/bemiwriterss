@@ -1,0 +1,146 @@
+.account.profile {
+  background: var(--white);
+}
+.account.profile .profile-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}
+@media(min-width:418px){
+  .account.profile .profile-container .col:nth-child(1) {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    height: calc(100%);
+    padding: 2rem;
+  }
+  .account.profile .profile-container .col:nth-child(2) {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    /* height: calc(100vh - 57px); */
+    padding: 2rem;
+    /* overflow: scroll; */
+  }
+}
+
+.account.profile .image-wrapper{
+  width:100%;
+}
+
+@media(max-width:496px){
+  .account.profile .profile-headers{
+    display:none;
+  }
+}
+
+.account.profile .submit-btn{
+  background:var(--dark-gold);
+  border:2px solid var(--dark-gold);
+}
+
+.account.profile .submit-btn:hover{
+  background:transparent;
+  color:var(--dark-gold);
+}
+
+.account.profile .profile-container .image-wrapper {
+  max-width: 300px;
+  margin: 0 auto;
+
+  padding: 1rem;
+}
+
+/* .account.profile .profile-container .col:nth-child(2)::-webkit-scrollbar {
+  width: 12px;
+}
+
+.account.profile .profile-container .col:nth-child(2)::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.account.profile .profile-container .col:nth-child(2)::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+.account.profile
+  .profile-container
+  .col:nth-child(2)::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} */
+
+/* For Firefox */
+.account.profile .profile-container .col:nth-child(2) {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+.account.profile .profile-container .card {
+  padding-bottom: 10px;
+}
+.account.profile .profile-container .col:nth-child(2) .input-group input {
+  border: none;
+  border-bottom: 1px solid var(--gray);
+}
+.account.profile .profile-container .col:nth-child(2) .large-headers {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.account.profile .profile-container .profile-details .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0rem;
+}
+.account.profile .profile-container .profile-details .description {
+  font-size: 16px;
+  background:#f2f2f2f2;
+  margin-top:1rem;
+  padding:1rem;
+}
+
+.account.profile .textbox{
+  border:1px solid var(--gray);
+  margin-bottom:1rem;
+  border-radius:1px;
+}
+
+.account.profile .uploadIcon{
+  width:50px;
+  height:50px;
+  margin:0 auto;
+}
+.account.profile .upload{
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+}
+
+.account.profile .upload input{
+  margin:0.5rem 0rem;
+}
+
+@media(max-width:418px){
+  .account.profile .profile-container .col:nth-child(1) {
+    box-shadow:0; 
+  }
+  .account.profile .profile-container .col:nth-child(2){
+    box-shadow:0;
+  }
+}
+
+@media (max-width: 660px) {
+  .account.profile .profile-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .account.profile .profile-container .profile-details .description {
+    font-weight:600;
+    margin-top:1.2rem;
+    text-align:justify;
+    font-size:var(--mobile-font);
+    padding:1rem;
+    color:var(--blue);
+  }.account.profile .profile-container .profile-details .row p{
+    font-size: var(--mobile-font);
+    font-weight:600;
+  }
+}

@@ -1,0 +1,22 @@
+.admin.applications .container .table_wrapper td .description,
+.admin.applications .container .table_wrapper td {
+  font-size: 12px;
+  font-weight: 600;
+}
+.admin.applications .container .table_wrapper td .table-btn {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.admin.applications .modal.approve{
+  display:none;
+}
+.admin.applications .modal.approve.active{
+  display:flex;
+}
+.admin.applications .modal.disapprove{
+  display:none;
+}
+.admin.applications .modal.disapprove.active{
+  display:flex;
+}

@@ -1,0 +1,9 @@
+.revision.modal-wrapper{
+    max-width:1000px;
+}
+.revision.modal-wrapper .input_group{
+width:100%;
+}
+.revision.modal-wrapper .input_group textarea{
+    border-radius:1px;
+}

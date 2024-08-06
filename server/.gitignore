@@ -1,0 +1,14 @@
+# Ignore node modules directory in the server directo
+/node_modules
+
+# Ignore environment variable file in the server directory
+.env
+
+# Ignore all files in the uploads/answers directory within the server directory
+/uploads/answers
+
+# Ignore all files in the uploads/assignments directory
+/uploads/assignments
+
+ 
+.vercel

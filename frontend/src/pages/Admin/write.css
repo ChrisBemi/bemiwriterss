@@ -1,0 +1,85 @@
+.admin.work .container table thead {
+  font-size: 12px;
+  font-weight: 600;
+}
+.admin.work .container table tbody tr .description {
+  color: var(--black);
+  font-size: 12px;
+  font-weight: 600;
+}
+.admin.work .container table tbody tr td .description {
+  width: 100%;
+  text-align: start;
+}
+.admin.work .container table tbody tr .table-btn {
+  font-size: 12px;
+  font-weight: 600;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.admin.work .container .individual-writer {
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  width: 150px;
+  margin-bottom: 10px;
+}
+.admin.work .modal.assign .card-headers {
+  color: var(--black);
+}
+
+.admin.work .modal.assign {
+  display: none;
+}
+.admin.work .modal.assign.active {
+  display: flex;
+}
+.admin.work .modal.assign .card-headers {
+  line-height: 2rem;
+}
+
+.admin.work .modal.assign .medium-header {
+  border-bottom: 2px solid var(--blue);
+  width: 100%;
+}
+
+.admin.work .search_container .input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.admin.work .search_container .input-group button {
+  border: none;
+  background: transparent;
+  font-size: 1.25rem;
+}
+.admin.work .modal.view-binders {
+  display: none;
+}
+.admin.work .modal.view-binders.active {
+  display: flex;
+}
+
+.admin.work .modal.assign-user {
+  display: none;
+}
+.admin.work .modal.assign-user.active {
+  display: flex;
+}
+.admin.work .modal.assign-user .card-headers {
+  line-height: 2rem;
+}
+
+.admin.work .modal.assign-user .medium-header {
+  border-bottom: 2px solid var(--blue);
+  width: 100%;
+}
+
+.admin.work .modal.cancel-assigning {
+  display: none;
+}
+.admin.work .modal.cancel-assigning.active {
+  display: flex;
+}

@@ -1,0 +1,9 @@
+.delete-work.modal-wrapper{
+    max-width:500px;
+}
+.delete-work.modal-wrapper .row-buttons{
+    margin-top:1rem;
+}
+.delete-work.modal-wrapper .row-buttons .table-btn{
+    margin:0 1rem;
+}

@@ -1,0 +1,91 @@
+.admin.assign .container table thead td,
+.admin.assign .container table td .description {
+  font-size: 12px;
+  font-weight: 600;
+}
+.admin.assign .container table thead .date{
+  min-width:180px;
+}
+
+.admin.assign .container table {
+  min-width: 800;
+}
+.admin.assign .container table thead .description {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+.admin.assign .container table .table-btn {
+  font-size: 12px;
+}
+.admin.assign .modal.update {
+  display: none;
+  /* display: flex; */
+  height: 100vh;
+}
+.admin.assign .modal.update.active {
+  display: flex;
+}
+.admin.assign .modal.update .input_group {
+  position: relative;
+}
+.admin.assign .search_container .input-group {
+  display: flex;
+}
+.admin.assign .search_container .input-group button {
+  border: none;
+  background: transparent;
+}
+.admin.assign .header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--dark-gold);
+}
+.admin.assign .description-buttons {
+  display: flex;
+}
+
+.admin.assign .modal.see-work-description {
+  display: none;
+}
+.admin.assign .modal.see-work-description .modal-wrapper {
+  position: relative;
+  text-align: center;
+}
+.admin.assign .modal.see-work-description.active {
+  display: flex;
+}
+.admin.assign .modal.see-work-description .close-icon {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+.admin.assign .modal.see-work-description .modals-header {
+  font-size: 1.2rem;
+  border-bottom: 2px solid var(--dark-gold);
+}
+.admin.assign .modal.see-work-description .close-icon {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+.admin.assign .modal.see-work-description .modal-wrapper {
+  width: 100%;
+  padding: 0;
+}
+
+.admin.assign .modal.delete-work-update{
+  display:none;
+}
+.admin.assign .modal.delete-work-update.active{
+  display:flex;
+}
+
+.admin.assign
+  .modal.see-work-description
+  .modal-wrapper
+  .modal-wrapper-container {
+  max-height: calc(100vh - 100px);
+  overflow-y: scroll;
+  padding: 2rem;
+}

@@ -1,0 +1,45 @@
+.orders.account.revision .submit-orders.account.modal {
+  flex-direction: column;
+  display: none;
+}
+.orders.account.revision .submit-orders.account.modal.active {
+  display: flex;
+}
+
+/* .orders.account.revision .container table tr .table-btn {
+  font-size: 10px;
+  font-weight: 700;
+} */
+.orders.account.revision .container table .description-buttons {
+  display: flex;
+  font-size: 10px;
+}
+.orders.account.revision .container table .description-buttons .table-btn {
+  display: block;
+  font-size: 10px;
+  width: 100%;
+}
+.orders.account.revision .container table .table-btn {
+  display: block;
+  font-size: 10px;
+  width: 100%;
+}
+
+.orders.account.revision .modal.job .modal-wrapper.job {
+  padding: 0rem;
+}
+.orders.account.revision
+  .modal.job
+  .modal-wrapper.job
+  .modal-wrapper-container {
+  max-height: calc(100vh - 100px);
+  overflow-y: scroll;
+  padding: 1rem;
+}
+
+.orders.account.revision .modal.job {
+  display: none;
+}
+.orders.account.revision .modal.job.active {
+  display: flex;
+}

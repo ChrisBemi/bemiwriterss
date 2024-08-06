@@ -1,0 +1,114 @@
+.account .navbar {
+  /* background: var(--blue-black); */
+  /* background: var(--gold); */
+
+  background: rgb(6, 36, 209);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(6, 36, 209, 1) 0%,
+    rgba(6, 149, 119, 1) 51%,
+    rgba(193, 183, 28, 1) 96%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(6, 36, 209, 1) 0%,
+    rgba(6, 149, 119, 1) 51%,
+    rgba(193, 183, 28, 1) 96%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(6, 36, 209, 1) 0%,
+    rgba(6, 149, 119, 1) 51%,
+    rgba(193, 183, 28, 1) 96%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0624d1",endColorstr="#c1b71c",GradientType=1);
+
+  position: fixed;
+  width: 100%;
+  right: 0;
+  left: 0;
+  height: 50px;
+  top: 0;
+  z-index: 9;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+.account .navbar .container.flex {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.account .navbar .container .menu-icon {
+  flex-basis: 40px;
+}
+.account .navbar .container .profile-section.flex {
+  display: flex;
+  align-items: center;
+  flex-basis: 70px;
+  justify-content: space-between;
+}
+
+.account .navbar .container .middle-navigation {
+  flex-basis: calc(100% - 144px);
+}
+.account .navbar .container .middle-navigation .description {
+  color: var(--white);
+  font-weight: 600;
+}
+.account .navbar .container .description {
+  position: relative;
+}
+.account .navbar .container .description::after {
+  position: absolute;
+  content: "";
+  width: 3rem;
+  height: 3px;
+  border: 0rem;
+  left: 0rem;
+  background: var(--white);
+  bottom: 0rem;
+  animation: moveLeftRight 1s infinite alternate;
+}
+
+@keyframes moveLeftRight {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100% - 3rem);
+    /* left: calc(100% - 5rem); */
+  }
+}
+
+@media (min-width: 538px) {
+  .account .navbar .container .middle-navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  .account .navbar .container .middle-navigation.mobile {
+    display: none;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 538px) {
+  .account .navbar .container .middle-navigation {
+    display: none;
+    justify-content: space-between;
+  }
+  .account .navbar .container .middle-navigation.mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.account .profile-section.flex .medium-btns {
+  width: 100px;
+  background: var(--gold);
+  color: var(--white);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: All 0.5;
+}

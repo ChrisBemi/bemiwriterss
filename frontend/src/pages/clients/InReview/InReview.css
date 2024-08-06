@@ -1,0 +1,18 @@
+.account.inreview.withdrawal .container table tr td p {
+  font-size: var(--table-description-font);
+  font-weight: 600;
+}
+.account.inreview.withdrawal .modal.job {
+  display: none;
+}
+.account.inreview.withdrawal .modal.job.active {
+  display:flex;
+}
+.account.inreview.withdrawal .modal-wrapper-container{
+  max-height: calc(100vh - 100px);
+  overflow-y: scroll;
+  padding: 1rem;
+}
+.account.inreview.withdrawal .modal-wrapper.job{
+    padding:0;
+}

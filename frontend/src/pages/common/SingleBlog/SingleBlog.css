@@ -1,0 +1,47 @@
+.academic-blog.single-blogs .header.flex {
+  justify-content: space-between;
+  align-items: center;
+}
+.academic-blog.single-blogs .description {
+  color: var(--faint-black);
+}
+.academic-blog.single-blogs .single-blog {
+  border: 2px solid var(--gray);
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+}
+.academic-blog.single-blogs .left {
+  position: relative;
+}
+.academic-blog.single-blogs .social-icons {
+  margin-top: 1.5rem;
+  padding: 1rem 0rem;
+
+  border-bottom: 2px solid var(--gray);
+  border-top: 2px solid var(--gray);
+}
+.academic-blog.single-blogs .social-icons p {
+  margin-right: 2rem;
+}
+.academic-blog.single-blogs .social-icons p i {
+  font-size: 1.7rem;
+}
+.academic-blog.single-blogs .comment-container{
+    padding:1rem;
+    border:2px solid var(--gray);
+    margin-top:2rem;
+}
+@media(max-width:534px){
+    .academic-blog.single-blogs .profile.flex{
+        flex-direction: column;
+        align-items: start;
+    }
+    .academic-blog.single-blogs .header.flex{
+        align-items:center;
+    }
+    .academic-blog.single-blogs .single-blog {
+        border:none;
+        padding:0rem;
+        margin-top: 1rem;
+      }
+}

@@ -1,0 +1,66 @@
+.progress.account .container table .table-btn {
+  font-size: 10px;
+  font-weight: 600;
+}
+.progress.account .container .due-time {
+  min-width: 180px;
+  width: 180px;
+}
+.progress.account .container .table_wrapper table .penalties {
+  width: 120px;
+  min-width: 120px;
+}
+.progress.account .submit-orders.account.modal {
+  flex-direction: column;
+  display: none;
+}
+
+.progress.account .submit-orders.account.modal.active {
+  display: flex;
+}
+.progress.account .search_container .input-group input {
+  border: none;
+}
+.progress.account .search_container .input-group {
+  border: none;
+  border-bottom: 1px solid var(--gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.progress.account .search_container .input-group button {
+  border: none;
+  background: transparent;
+}
+.progress.account .search_container .input-group button i {
+  font-size: 1.3rem;
+  color: var(--blue);
+}
+.progress.account .modal.see-work-description {
+  display: none;
+}
+.progress.account .modal.see-work-description.active {
+  display: flex;
+}
+.progress.account .modals-header {
+  font-weight: 600;
+  color: var(--dark-gold);
+}
+
+.progress.account .modal.see-work-description .modal-wrapper {
+  padding: 0;
+}
+.progress.account .modal-wrapper .modal-wrapper-container {
+  max-height: calc(100vh - 100px);
+  overflow-y: scroll;
+  padding: 1rem;
+}
+.progress.account .container table tbody tr td p {
+  font-size: var(--table-description-font);
+  font-weight: 600;
+}
+.progress.account .container table tr td {
+  font-size: var(--table-description-font);
+  font-weight: 600;
+}

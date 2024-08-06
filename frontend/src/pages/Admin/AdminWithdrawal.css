@@ -1,0 +1,140 @@
+.admin.withdrawals .modal.pay-writer {
+  display: none;
+}
+.admin.withdrawals .modal.pay-writer.active {
+  display: flex;
+}
+.admin.withdrawals .container table tr td .description {
+  font-size: var(--table-description-font);
+  font-weight: 600;
+}
+.admin.withdrawals .container table tr td {
+  font-size: var(--table-description-font);
+  font-weight: 600;
+}
+
+.admin.withdrawals .container table tr td .table-btn {
+  width: 120px;
+}
+.admin.withdrawals .row-buttons {
+  border-top: 2px solid var(--dark-gold);
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.admin.withdrawals form {
+  width: 100%;
+}
+.admin.withdrawals form .input-group input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid var(--success-color);
+}
+.admin.withdrawals form .input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+.admin.withdrawals form .input-group input {
+  flex-basis: 70%;
+  padding-left: 10px;
+}
+.admin.withdrawals form .input-group p {
+  flex-basis: 30%;
+  font-weight: 600;
+  border-bottom: 2px solid var(--blue);
+  padding: 10px;
+  background: var(--blue);
+  color: var(--white);
+  border: 2px solid var(--blue);
+}
+.admin.withdrawals .medium-header {
+  border-bottom: 2px solid var(--dark-gold);
+  width: 100%;
+}
+
+.checkbox-container input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+}
+
+.checkbox-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius:0px;
+  transition: background-color 0.3s;
+}
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #130252;
+}
+.checkbox-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+@media (max-width: 460px) {
+  .admin.withdrawals form .input-group {
+    flex-direction: column;
+  }
+  .admin.withdrawals form .input-group p {
+    width: 100%;
+  }
+  .admin.withdrawals form .input-group input {
+    height: 50px;
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  .admin.withdrawals .modal-wrapper {
+    padding: 2rem 0rem;
+  }
+}
+@media (max-width: 327px) {
+  .admin.withdrawals form .input-group {
+    flex-direction: column;
+  }
+  .admin.withdrawals form .input-group p {
+    width: 100%;
+    font-size: 12px;
+  }
+  .admin.withdrawals form .input-group input {
+    font-size: 0.8rem;
+  }
+  .admin.withdrawals .medium-header {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}

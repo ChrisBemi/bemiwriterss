@@ -1,0 +1,62 @@
+.modal-wrapper.update{
+    max-width:1400px;
+    height:100vh;
+    width:100%;
+    padding:0rem;
+    position: relative;
+}
+.modal-wrapper.update .grid{
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1rem;
+}
+.modal-wrapper.update .close-icon{
+    position:absolute;
+    height:30px;
+    width:30px;
+    right:1rem;
+    top:1rem;
+    cursor: pointer;
+}
+.modal-wrapper.update img{
+    height:45px;
+    width:45px;
+} 
+.modal-wrapper.update .wrapper-container{
+    width:100%;
+    padding:1rem;
+}
+.modal-wrapper.update .row-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.modal-wrapper.update textarea{
+    border:1px solid var(--gray);
+    border-radius:1px;
+}
+.modal-wrapper.update input{
+    height:40px;
+    border:1px solid var(--gray)
+}
+.modal-wrapper.update .uploads{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.modal-wrapper.update .wrapper-container{
+    max-height:var(100vh - 50px);
+    overflow-y:scroll;
+}
+
+@media(max-width:632px){
+    .modal-wrapper.update .grid{
+        grid-template-columns:repeat(1,1fr);
+    }   
+    .modal-wrapper.update .wrapper-container{
+        overflow-y:scroll;
+    }
+}

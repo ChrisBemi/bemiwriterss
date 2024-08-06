@@ -1,0 +1,38 @@
+.academic-subject .grid{
+
+    grid-template-columns:repeat(2,1fr);
+    gap:1rem;
+    
+}
+.academic-subject .grid .card{
+
+    padding:1rem;
+    
+}
+.academic-subject .grid .card p{
+    cursor: pointer;
+    line-height:2rem;
+}
+.academic-subject .grid .card p:hover{
+    text-decoration: underline;
+}
+.academic-subject .container .description{
+    text-align: center;
+    line-height:2rem;
+}
+@media(max-width:500px){
+    .academic-subject .grid .card{
+        box-shadow:none;    
+        padding:0;    
+    }
+    .academic-subject .medium-header{
+        text-align:start;
+        margin-left:1rem; 
+    }
+    .academic-subject .container .description{
+        text-align: start;
+        margin-top:0.2rem;
+        line-height:1.6rem;
+    }
+
+}

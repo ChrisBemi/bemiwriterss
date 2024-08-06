@@ -1,0 +1,100 @@
+.account.withdrawal {
+  position: relative;
+}
+.account.withdrawal .container .large-headers {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.account.withdrawal .container .medium-header {
+  color: var(--blue);
+  margin-top: 1rem;
+}
+.account.withdrawal .container form {
+  width: 93%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-top: 2rem;
+  transition: all 0.5s;
+}
+.account.withdrawal .container .pending.table_wrapper {
+  border: none;
+}
+.account.withdrawal .container form input {
+  border: none;
+  border-bottom: 1px solid var(--gray);
+  cursor: pointer;
+}
+.account.withdrawal .container form input:focus {
+  border-bottom: 1px solid var(--pinkRed);
+}
+.account.withdrawal .container form .input-group {
+  margin: 1rem 0rem;
+}
+.account.withdrawal .container form input[type="submit"] {
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+.account.withdrawal .container form input[type="submit"]:focus {
+  border: 2px solid var(--success-color);
+}
+.account.withdrawal .container form input[type="submit"]:hover {
+  border: 2px solid var(--success-color);
+}
+
+.account.withdrawal .container .grid {
+  grid-template-columns: 1fr 1fr;
+}
+.account.withdrawal .pending {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+.account.withdrawal .withdrawal-form {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+.account.withdrawal .pending {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.account.withdrawal .pending .table-container {
+  width: 100%;
+  min-width: 300px;
+  box-shadow: none;
+}
+.account.withdrawal tbody td .description {
+  font-size: 12px;
+  font-weight: 600;
+}
+.account.withdrawal thead td {
+  font-size: 12px;
+  font-weight: 600;
+}
+.account.withdrawal thead {
+  background: transparent;
+  background: var(--success-color);
+}
+.account.withdrawal thead td {
+  color: var(--white);
+}
+
+.account.withdrawal tbody tr .table-btn {
+  font-size: var(--buttons-font);
+  font-weight: var(--buttons-font-weight);
+}
+
+.account.withdrawal .table_wrapper table {
+  min-width: 650px;
+}
+
+@media (max-width: 812px) {
+  .account.withdrawal .container .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 394px) {
+  .account.withdrawal .pending .table-container thead td {
+    font-size: 12px;
+  }
+}

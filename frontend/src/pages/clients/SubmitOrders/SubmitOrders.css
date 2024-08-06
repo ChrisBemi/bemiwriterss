@@ -1,0 +1,80 @@
+.submit-orders.account .uploads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.submit-orders.account .uploads .input_group {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+}
+.submit-orders.account textarea {
+  border-radius: 1px;
+  
+}
+.submit-orders.account textarea:focus {
+  border: 1px solid var(--pinkRed);
+}
+.submit-orders.account input {
+  border: 1px solid var(--gray);
+  padding: 10px;
+}
+.submit-orders.account.modal select {
+  width: 100%;
+  cursor: pointer;
+  height: 40px;
+  border: 1px solid var(--gray);
+  outline: none;
+}
+.submit-orders.account.modal select:focus {
+  border: 1px solid var(--pinkRed);
+}
+.submit-orders.account .row-buttons{
+  display:flex;
+  justify-content:center;
+  width:100%;
+}
+.modal-wrapper.account{
+  max-width:1000px;
+}
+.submit-orders.account .input_group{
+  position: relative;
+}
+.submit-orders.account.modal .modal-wrapper{
+ width:100%; 
+ padding:0;
+
+}
+.submit-orders.account.modal .submit-modal{
+  width:100%;
+  max-height:calc(100vh - 100px);
+  overflow-y:scroll;
+  padding:2rem 0rem;
+}
+
+
+@media(max-width:1024px){
+  .submit-orders.account.modal .submit-modal .uploaded-files{
+   grid-template-columns:repeat(3,1fr); 
+  }
+}
+@media(max-width:610px){
+  .submit-orders.account.modal .submit-modal .uploaded-files{
+   grid-template-columns:repeat(2,1fr); 
+  }
+  .submit-orders.account.modal .submit-modal .uploaded-files .table-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:80px;
+  }
+}
+@media(max-width:474px){
+  .submit-orders.account.modal .submit-modal .uploaded-files{
+   grid-template-columns:repeat(1,1fr); 
+  }
+}

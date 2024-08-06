@@ -1,0 +1,45 @@
+.assingment-types .container {
+  padding: 0 1rem;
+  margin-top: 2rem;
+}
+
+.container .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.container .card-body .medium-header {
+  text-align: start;
+}
+
+.container .grid .card {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.container .grid .card .card-body {
+  padding: 1rem;
+}
+
+@media (max-width: 836px) {
+  .container .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .container .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container .grid .card {
+    box-shadow:none;
+    margin-bottom:1rem;
+    padding:1rem;
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.35);
+    border-radius:5px;
+  }
+  .container .grid .card .card-body {
+    padding:0rem;
+  }
+}

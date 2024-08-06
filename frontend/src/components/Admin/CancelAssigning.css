@@ -1,0 +1,7 @@
+.cancel.modal-wrapper .row-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 1rem;
+}

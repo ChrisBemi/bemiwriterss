@@ -1,0 +1,48 @@
+.admin.writers .modal.delete-writer {
+  display: none;
+}
+.admin.writers .modal.delete-writer.active {
+  display: flex;
+}
+.admin.writers .notification-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.admin.writers .notification-form .col:nth-child(2) {
+  flex-basis: 40%;
+}
+.admin.writers .notification-form .col:nth-child(2) textarea {
+  border-radius: 0;
+}
+.admin.writers .notification-form .col:nth-child(1) {
+  flex-basis: 57%;
+}
+.admin.writers .notification-form .col:nth-child(2) .submit-btn {
+  flex-basis: 57%;
+  margin-top: 2rem;
+}
+.admin.writers .notification-form .col:nth-child(2) .submit-btn:hover {
+  border: 2px solid var(--marroon);
+}
+.admin.writers .container .table_wrapper {
+  margin-top: 2rem;
+}
+.admin.writers .container .table_wrapper table td .description,
+.admin.writers .container .table_wrapper table thead td {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media (max-width: 742px) {
+  .admin.writers .notification-form {
+    width: 100%;
+    flex-direction: column;
+  }
+  .admin.writers .notification-form .col:nth-child(2) {
+    width: 100%;
+  }
+  .admin.writers .notification-form .col:nth-child(1) {
+    width: 100%;
+  }
+}

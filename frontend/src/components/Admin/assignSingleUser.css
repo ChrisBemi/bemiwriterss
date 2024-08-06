@@ -1,0 +1,16 @@
+.modal-wrapper.assign-single .input-group{
+    width:100%;
+    border-bottom:1px solid var(--gray);
+}
+.modal-wrapper.assign-single{
+    position:relative;
+}
+.modal-wrapper.assign-single .input-group input[type="email"]{
+    width:100%;
+    border:none;
+}
+.modal-wrapper.assign-single .close-icon{
+    position:absolute;
+    top:1rem;
+    right:1rem;
+}

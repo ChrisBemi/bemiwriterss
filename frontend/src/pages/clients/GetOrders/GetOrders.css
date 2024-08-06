@@ -1,0 +1,63 @@
+.orders.account .modal {
+  display: none;
+}
+.orders.account .modal.active {
+  display: flex;
+}
+.orders.account .modal .medium-header {
+  color: var(--blue);
+}
+.orders table {
+  min-width: 850px;
+}
+.orders table .time-container {
+  width: 150px;
+}
+.orders table .table-btn {
+  width: 70px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+table tbody tr td .description.descriptive-text {
+  color: #ff004f;
+  font-weight: 600;
+}
+.orders.account table .navigation-buttons {
+  display: flex;
+  flex-direction: column;
+}
+.orders.account table .navigation-buttons .table-btn {
+  width: 100px;
+  margin: 5px 0rem;
+  padding: 5px 0;
+  font-size: var(--table-description-font);
+  font-weight: 600;
+}
+.orders.account .modal.get-orders {
+  display: none;
+}
+.orders.account .modal.get-orders.active {
+  display: flex;
+}
+.orders.account .container table tr td .description {
+  font-size: var(--table-description-font);
+  font-weight: 600;
+}
+.orders.account .container table tr td {
+  font-size: var(--table-description-font);
+  font-weight: 600;
+}
+.orders.account .modal-wrapper{
+    padding:0;
+}
+.orders.account .modal-wrapper .modal-wrapper-container {
+    max-height: calc(100vh - 100px);
+    overflow-y: scroll;
+    padding: 1rem;
+  }
+
+  .orders.account .modal-wrapper .modal-wrapper-container{
+    
+  }

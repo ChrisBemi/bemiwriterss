@@ -1,0 +1,114 @@
+.admin .uploads {
+  display: grid;
+  position: relative;
+}
+.admin .uploads .input_group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.admin .container input {
+  border: none;
+}
+.admin .container input[type="date"] {
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+}
+.admin .container .input-group {
+  border-bottom: 1px solid var(--gray);
+  cursor: pointer;
+}
+.admin .container select {
+  width: 100%;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+}
+.admin .uploadIcon {
+  width: 30px;
+  height: 30px;
+}
+.admin .input_group {
+  position: relative;
+}
+.admin .row {
+  display: flex;
+  justify-content: space-between;
+}
+.admin .row .input-group {
+  flex-basis: 49%;
+}
+.admin .controllers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.uploaded-files {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 0.5rem;
+}
+.uploaded-files .file-preview {
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.admin.withdrawals .modal.delete-withdrawals {
+  display: none;
+}
+.admin.withdrawals .modal.delete-withdrawals.active {
+  display: flex;
+}
+.admin.withdrawals table tbody tr td .table-btn.setInRevision {
+  background: var(--success-color);
+}
+.admin.withdrawals table tbody tr td .table-btn.setInRevision:hover {
+  color: var(--success-color);
+  background: transparent;
+}
+
+.admin.withdrawals .modal.delete-withdrawals {
+  display: none;
+}
+.admin.withdrawals .modal.delete-withdrawals.active {
+  display: fex;
+}
+.admin p sup {
+  color: var(--pinkRed);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.admin form textarea {
+  border-radius: 4px;
+}
+
+@media (max-width: 660px) {
+  .admin .uploaded-files {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 542px) {
+  .admin .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 530px) {
+  .admin .uploaded-files {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 374px) {
+  .admin .uploaded-files {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
